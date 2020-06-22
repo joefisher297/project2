@@ -1,0 +1,31 @@
+.navbar-brand {
+  font-family: monospace;
+}
+
+.sidebar {
+  border-right-style: solid;
+  border-width: thin;
+  border-color: lightgrey;
+}
+
+body, html {
+  height: 96%;
+}
+
+.container {
+  margin-left: -1%;
+}
+
+#messageForm {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#composer {
+  width: 87%;
+}
+
+#newChannelName {
+  width: 79%;
+}

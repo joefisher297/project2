@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="col-8">
+  <p id='channelID'>{{ channel.id }}</p>
+
+  <ul>Messages</ul>
+  {% for message in channel.messages %}
+    <li>{{ message.content }} <i> posted at </i> {{ message.timestamp }}</li>
+  {% endfor %}
+
+  <form class="form-inline" id="messageForm">
+    <input type="text" class="form-control mr-2 mb-2" id="composer" placeholder="Compose message...">
+    <button type="submit" class="btn btn-primary mb-2">Send</button>
+  </form>
+</div>
+
+
+{% endblock %}
